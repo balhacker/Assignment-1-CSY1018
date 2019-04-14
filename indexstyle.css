@@ -1,0 +1,131 @@
+/*CSS FOR NAVIGATION BAR STARTS*/
+
+.navbar{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+/*customizing navigation bar links*/
+.navbar a{
+	margin:0 10px;
+	text-decoration: none;
+	font-family: 'Cabin Sketch', sans-serif;
+	font-size: 20px;
+	color:green;
+	transition: all .4s ease;
+
+}
+
+/*increasing font-size of menu items on hover*/
+.navbar a:hover{
+	font-size: 2em;
+	font-weight: bold;
+}
+
+/*adjusting position of menu items*/
+ul{							
+	margin: 30px  20px 0 0;
+	display: flex;
+	flex-direction: row;
+}
+
+/*customizing list menu items*/
+li{
+	list-style-type: none;
+}
+
+/*CSS FOR NAVIGATION BAR ENDS*/
+
+
+/*CSS FOR SITE'S NAME STARTS*/
+
+h1{
+	margin-left: 10px;
+	font-size: 30px;
+	font-family: 'Fredericka the Great', cursive;
+}
+
+/*CSS FOR SITE'S NAME ENDS*/
+
+
+/*CSS FOR FIRST BODY CONTAINER STARTS*/
+
+.Container{
+	display: flex;
+	flex-direction: row;
+	border:1px solid pink;
+	height: 85vh;
+
+}
+
+/*CSS FOR FIRST BODY CONTAINER ENDS*/
+
+
+/*CSS FOR SECOND BODY CONTAINER STARTS*/
+
+.FirstInner{
+	display: flex;
+	flex-direction: column;
+	border:1px solid green;
+	width: 70%;
+	height: 85vh;
+}
+
+/*CSS FOR SECOND BODY CONTAINER ENDS*/
+
+
+/*CSS FOR RECENT NEWS BOX STARTS*/
+
+.Recent{
+	border:1px solid magenta;
+	width: 30%;
+	height: 85vh;
+}
+
+/*CSS FOR RECENT NEWS BOX ENDS*/
+
+
+/*CSS FOR MOST RECENT NEWS BOX STARTS*/
+
+.MostRecent{
+	border:1px solid blue;
+	width: 100%;
+	height: 45vh;
+}
+
+/*CSS FOR MOST RECENT NEWS BOX ENDS*/
+
+
+/*CSS FOR THIRD BODY CONTAINER STARTS*/
+
+.ThirdInner{
+	display: flex;
+	flex-direction: row;
+	border:1px solid yellow;
+	height: 40vh;
+}
+
+/*CSS FOR THIRD BODY CONTAINER ENDS*/
+
+
+/*CSS FOR TRENDING NEWS BOX STARTS*/
+
+.Trending{
+	border:1px solid red;
+	width: 50%;
+	height: 40vh;
+}
+
+/*CSS FOR TRENDING NEWS BOX ENDS*/
+
+
+/*CSS FOR MOST POPULAR NEWS BOX STARTS*/
+
+.MostPopular{
+	border:1px solid grey;
+	width: 50%;
+	height: 40vh;
+}
+
+/*CSS FOR MOST POPULAR NEWS BOX ENDS*/
