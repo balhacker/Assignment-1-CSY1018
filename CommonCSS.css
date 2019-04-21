@@ -1,0 +1,163 @@
+/*CSS FOR BODY STARTS*/
+
+body{
+	margin:0 20px;
+}
+/*CSS FOR BODY ENDS*/
+
+
+/*CSS FOR NAVIGATION BAR STARTS*/
+
+.navbar{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+/*customizing navigation bar links*/
+.navbar a{
+	margin:0 10px;
+	text-decoration: none;
+	font-family: 'Cabin Sketch', sans-serif;
+	font-size: 20px;
+	color:black;
+	transition: all 0.5s ease;
+}
+
+/*increasing font-size of menu items on hover*/
+.navbar a:hover{
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+/*adjusting position of menu items*/
+.navbar ul{							
+	margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+}
+
+/*customizing list menu items*/
+.navbar li{
+	list-style-type: none;
+}
+
+/*CSS FOR NAVIGATION BAR ENDS*/
+
+
+/*CSS FOR SITE'S NAME STARTS*/
+
+h1{
+	margin-left: 10px;
+	font-size: 30px;
+	font-family: 'Fredericka the Great', cursive;
+}
+
+/*CSS FOR SITE'S NAME ENDS*/
+
+
+/*CSS FOR SEARCH BAR STARTS*/
+
+/*positioning the search bar*/
+form{
+	margin:25px 0;
+}
+
+/*customizing search bar*/
+input[name=Bar]{
+	padding:5px 15vw 5px 5px;
+	border-color: black;
+	border-radius: 5px;
+}
+
+/*customizing search button*/
+input[name=Button]{
+	padding: 6px 10px;
+	background-color: black;
+	color: white;
+	border-style: none;
+	transition: all 1s ease;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+/*creating effects in search button on hover*/
+input[name=Button]:hover{
+
+	background-color: white;
+	border:1px solid black;
+	color:black;
+}
+/*CSS FOR SEARCH BAR ENDS*/
+
+
+/*CSS FOR MENU ICON STARTS*/
+.menus{
+	margin: 30px 10px 0 0;
+	font-size: 20px;
+	cursor: pointer;
+}
+/*CSS FOR MENU ICON ENDS*/
+
+
+/*STYLING MENU ICON ON HOVER*/
+.menus:hover{
+	color:gray;
+}
+/*STYLING MENU ICON ON HOVER*/
+
+
+/*CSS FOR RESPONSIVE SIDE BAR STARTS*/
+.sidebar {
+	background: black;
+	display: none;
+	width: 12%;
+	position: fixed;
+	top:0;
+	right: 0;
+	height: 100%;
+	padding:30px 30px 0 30px;
+	opacity: 0.8;
+}
+/*CSS FOR RESPONSIVE SIDE BAR ENDS*/
+
+
+/*CUSTOMIZING SIDEBAR MENUS */
+.sidebar li{
+	list-style-type: none;
+	margin:15px 0;
+}
+/*CUSTOMIZING SIDEBAR MENUS*/
+
+
+/*CUSTOMIZING SIDEBAR LINKS*/ 
+.sidebar a{
+	text-decoration: none;
+	font-family: 'Cabin Sketch', sans-serif;
+	font-size: 20px;
+	color:white;
+}
+/*CUSTOMIZING SIDEBAR LINKS*/ 
+
+
+/*STYLING SIDEBAR LINKS ON HOVER*/
+.sidebar a:hover{
+	font-weight: bold;
+}
+/*STYLING SIDEBAR LINKS ON HOVER*/
+
+
+/*CUSTOMIZING CANCEL ICON IN SIDEBAR*/
+.sidebar .close{
+	font-size: 50px;
+	color: white;
+	cursor: pointer;
+}
+/*CUSTOMIZING CANCEL ICON IN SIDEBAR*/
+
+
+/*STYLING CANCEL BUTTON ON HOVER*/
+.close:hover{
+	color: red; 
+}
+/*STYLING CANCEL BUTTON ON HOVER*/
