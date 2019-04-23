@@ -1,0 +1,66 @@
+/*CSS FOR MAIN GRID CONTAINER STARTS*/
+
+.Container{
+	margin:20px 60px 30px 60px;
+	display: grid;
+	grid-template-columns: 70% 28.5%;
+	grid-template-rows: 50vh 40vh;
+	grid-column-gap: 1.5%;
+	grid-row-gap: 2.5%;
+	background: white;
+}
+/*CSS FOR MAIN GRID CONTAINER ENDS*/
+
+
+
+/*CSS FOR INNER GRID CONTAINER STARTS*/
+
+.InnerContainer{
+	display: grid;
+	grid-template-columns: 49% 49%;
+	grid-column-gap: 2%;
+}
+/*CSS FOR INNER GRID CONTAINER ENDS*/
+
+
+
+/*CSS FOR MOST RECENT NEWS BOX STARTS*/
+
+.Breaking{
+	box-shadow: 2px 3px 33px -13px rgba(0,0,0,0.75);
+	border-radius: 20px;
+	text-align: center;
+}
+/*CSS FOR MOST RECENT NEWS BOX ENDS*/
+
+
+
+/*CSS FOR RECENT NEWS BOX STARTS*/
+
+.Recent{
+	overflow: hidden scroll;
+	grid-row: 1 / 3;
+	grid-column-start: 2;
+	box-shadow: 2px 3px 33px -13px rgba(0,0,0,0.75);
+}
+/*CSS FOR RECENT NEWS BOX ENDS*/
+
+
+
+/*CSS FOR TRENDING NEWS BOX STARTS*/
+
+.Trending{
+	overflow: hidden scroll;
+	box-shadow: 2px 3px 33px -13px rgba(0,0,0,0.75);
+}
+/*CSS FOR TRENDING NEWS BOX ENDS*/
+
+
+
+/*CSS FOR MOST POPULAR NEWS BOX STARTS*/
+
+.MostPopular{
+	overflow: hidden scroll;
+	box-shadow: 2px 3px 33px -13px rgba(0,0,0,0.75);
+}
+/*CSS FOR MOST POPULAR NEWS BOX ENDS*/

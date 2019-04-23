@@ -1,0 +1,409 @@
+/*CSS FOR BODY STARTS*/
+
+/*setting background color for body*/
+body{
+	background:#EEEEEE;
+}
+/*CSS FOR BODY ENDS*/
+
+
+
+
+/*CSS FOR NAVIGATION BAR STARTS*/
+
+/*styling and positioning header and navigation bar*/
+.navbar{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.75);
+	border-radius: 5px 5px 20px 20px;
+	background-color: white;
+	padding: 0 10px;
+	border-bottom:4px solid;
+}
+
+/*customizing navigation bar links*/
+.navbar a{
+	margin:0 10px;
+	text-decoration: none;
+	font-family: 'Kreon', serif;
+	font-size: 20px;
+	color:black;
+	transition: .4s;
+}
+
+/*sttyling menu items on hover*/
+.navbar a:hover{
+	font-size: 1.7em;
+	font-weight: bold;
+}
+
+/*adjusting position of menu items*/
+.navbar ul{							
+	margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+}
+
+/*removing list bullets*/
+li{
+	list-style-type: none;
+}
+/*CSS FOR NAVIGATION BAR ENDS*/
+
+
+
+
+/*CSS FOR SITE'S NAME STARTS*/
+h1{
+	margin-left: 10px;
+	font-size: 30px;
+	font-family: 'Fredericka the Great', cursive;
+}
+/*CSS FOR SITE'S NAME ENDS*/
+
+
+
+
+/*CSS FOR SEARCH BAR STARTS*/
+
+/*positioning the search bar*/
+form{
+	margin:25px 0;
+}
+
+/*customizing search bar*/
+.navbar input[name=Bar]{
+	padding:5px 15vw 5px 5px;
+	border-color: black;
+	border-radius: 5px;
+	border:2px solid ;
+	font-family: 'Kreon', serif;
+}
+
+/*customizing search button*/
+.navbar input[name=Button]{
+	padding: 6px 10px;
+	background-color: black;
+	color: white;
+	border-style: none;
+	transition: all 1s ease;
+	cursor: pointer;
+	border-radius: 5px;
+	font-family: 'Kreon', serif;
+}
+
+/*creating effects in search button on hover*/
+.navbar input[name=Button]:hover{
+
+	background-color: white;
+	border:1px solid black;
+	color:black;
+}
+/*CSS FOR SEARCH BAR ENDS*/
+
+
+
+/*CSS FOR RESPONSIVE SEARCH ICON STARTS*/
+
+/*styling google search icon*/
+.search-icon{
+	margin:28px 0 0 10px;
+	cursor: pointer;
+	display: none;
+}
+
+/*styling search icon on hover*/
+.search-icon:hover{
+	color:gray;
+}
+/*CSS FOR RESPONSIVE SEARCH ICON ENDS*/
+
+
+
+
+/*CSS FOR POPPING UP SEARCH BAR STARTS*/
+
+/*customizing popup search bar background and position*/
+.popup-search{
+	position: fixed;
+	top:1;
+	left:0;
+	right:0;
+	width:100%;
+	background: black;
+	opacity: 0.9;
+	text-align: center;
+	color: white;
+	display: none;
+	border-radius: 10px;
+}
+
+/*customizing responsive popup search button*/
+.popup-search input[name=Button]{
+	padding: 6px 10px;
+	background-color: white;
+	color: black;
+	border-style: none;
+	transition: all 1s ease;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+/*creating effects on responsive popup search button on hover*/
+.popup-search input[name=Button]:hover{
+	background-color: black;
+	border:1px solid white;
+	color:white;	
+}
+
+/*customizing responsive popup search bar*/
+.popup-search input[name=Bar]{
+	padding:5px 15vw 5px 5px;
+	border-color: white;
+	border-radius: 5px;
+}
+/*CSS FOR POPPING UP SEARCH BAR ENDS*/
+
+
+
+
+/*CSS FOR MENU ICON STARTS*/
+
+/*styling google menu icon*/
+.menus{
+	margin: 28px 10px 0 0;
+	font-size: 20px;
+	cursor: pointer;
+	display: none;
+}
+
+
+/*styling google menu icon on hover*/
+.menus:hover{
+	color:gray;
+}
+/*CSS FOR MENU ICON ENDS*/
+
+
+
+
+/*CSS FOR RESPONSIVE SIDE BAR STARTS*/
+.sidebar {
+	background: black;
+	position: fixed;
+	top:0;
+	width: 0;
+	right: 0;
+	height: 100%;
+	padding:0;
+	opacity: 0.8;
+	transition: 1s;
+}
+
+/*removing bullets on link lists and adjusting margins*/
+.sidebar li{
+	list-style-type: none;
+	margin:15px 0;
+}
+
+
+/*styling responsive sidebar links */ 
+.sidebar a{
+	text-decoration: none;
+	font-family: 'Kreon', serif;
+	font-size: 20px;
+	color:white;
+}
+
+
+/*styling responsive sidebar links on hover*/
+.sidebar a:hover{
+	font-weight: bold;
+}
+
+
+/*customizing sidebar cancel button */
+.sidebar .close{
+	font-size: 50px;
+	color: white;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+
+/*stying sidebar cancel button on hover*/
+.close:hover{
+	color: red; 
+}
+/*CSS FOR RESPONSIVE SIDE BAR ENDS*/
+
+
+
+/*CSS FOR FOOTER PART STARTS*/
+
+/*customizing whole footer div*/
+.Footer{
+	padding:50px 0;
+	width:100%;
+	background: #191919;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	border-radius: 10px 10px 0 0;
+}
+
+/*defining margins for all spans on footer*/
+.Footer span{
+	margin:0 10px;
+}
+
+/*customixing icons on footer part*/
+.Footer i{
+	font-size: 15px;
+	margin:0 10px 0 0;
+}
+
+/*customizing footer titles*/
+h3{
+	color: white;
+	font-family: 'Gabriela', serif;
+}
+
+/*customizing footer links*/
+.Footer a{
+	text-decoration: none;
+	color: gray;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 18px;
+}
+
+/*defining margins for footer list items*/
+.Footer li{
+	margin: 5px 0;
+}
+
+/*changing color footer links on hover*/
+.Footer a:hover{
+	color: white;
+}
+
+/*customizing subscribe butoon*/
+.Footer input[name=Button]{
+	padding: 6px 10px;
+	background-color: red;
+	color: white;
+	border-style: none;
+	transition: .8s;
+	cursor: pointer;
+	border-radius: 5px;
+	font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+/*customizing subscribe butoon on hover*/
+.Footer input[name=Button]:hover{
+	background-color: white;
+	color:black;	
+}
+
+/*csutomizing input space for email*/
+.Footer input[name=Email]{
+	padding:5px 10vw 5px 5px;
+	border-color: white;
+	border-radius: 5px;
+}
+
+/*customizing last footer items*/
+.Last{
+	background: black;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding:5px 20px;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	border-radius: 0 0 10px 10px;
+}
+
+/*customizing last footer items span and links*/
+.Last span, a{
+	color: gray;
+	text-decoration: none;
+}
+
+/*defining margins for last footer items*/
+.Terms {
+	margin: 16px 0 15px;
+}
+
+/*customizing last footer items on hover*/
+.Terms a:hover{			
+	color: white;
+}
+
+/*CSS FOR FOOTER PART ENDS
+
+
+
+
+
+
+/*ADDING MEDIA QUERIES TO MAKE THE PAGE RESPONSIVE*/
+
+
+
+/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 1075PX STARTS*/
+@media screen and (max-width: 1075px){
+
+	.menus{						/*showing menu icon*/
+		display: block;
+	}
+
+	.navbar ul{					/*hiding navbar menus*/
+		display: none;
+	}
+
+}
+/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 1075PX ENDS*/
+
+
+
+
+/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 600PX STARTS*/
+@media screen and (max-width: 600px){
+
+	.navbar form{
+		display: none;			/*hiding search bar*/
+	}
+
+	.search-icon{				/*displaying search icon*/
+		display: block;
+		order: 1;
+	}
+
+	h1{							
+		order:2;				/*ordering navbar flex items*/
+	}
+
+	.menus{
+		order:3;
+	}
+	
+}
+/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 600PX ENDS*/
+
+
+
+/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 535PX STARTS*/
+@media screen and (max-width: 535px){
+	
+  	.Footer{
+		flex-direction: column;	/*changing flex direction of last footer flex items*/
+	}
+
+}
+/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 535PX ENDS*/
+
