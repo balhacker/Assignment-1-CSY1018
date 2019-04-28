@@ -1,0 +1,55 @@
+
+/*ADDING MEDIA QUERIES TO MAKE THE PAGE RESPONSIVE*/
+
+
+
+/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 1000PX STARTS*/
+@media screen and (max-width:1000px ){
+
+	.Container{
+
+		grid-template-columns: 100%;			/*efining width of main grid container*/
+	}
+
+ 	.image-4 , .image-5, .image-6 {				/*hiding 4th ,5th and 6th section of news contents*/
+		display: none;
+	}
+
+
+	.Recent{									/*adjusting position of recent newssection*/
+		
+		grid-row-start: 2;
+		grid-column-start: 1;
+		margin-top: 25px;
+	}
+
+	.MostPopular, .Trending, .Recent{			/*adding shoadow and borders in news sections*/
+		box-shadow: none;
+		border-bottom: 1px solid black;
+		border-radius: 0 0 15px 15px;
+	}
+
+	.Breaking{									/*setting transparent border for breaking news section*/
+		border:1px solid transparent;
+	}
+
+}
+/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 1000PX ENDS*/
+
+
+
+
+/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 760PX STARTS*/
+@media screen and (max-width: 760px){
+
+	.InnerContainer{							/*setting width of inner grid container*/
+		grid-template-columns: 100%;
+	}
+
+	.Container{									/*removing margings on main grid container*/
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+}
+/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 760PX ENDS*/

@@ -1,0 +1,56 @@
+
+/*ADDING MEDIA QUERIES TO MAKE THE PAGE RESPONSIVE*/
+
+
+
+/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 1000PX STARTS*/
+@media screen and (max-width: 1000px){
+
+	.menus{						/*showing menu icon*/
+		display: block;
+	}
+
+	.navbar ul{					/*hiding navbar menus*/
+		display: none;
+	}
+
+}
+/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 1000PX ENDS*/
+
+
+
+
+/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 760PX STARTS*/
+@media screen and (max-width: 760px){
+
+	.navbar form{
+		display: none;			/*hiding search bar*/
+	}
+
+	.search-icon{				/*displaying search icon*/
+		display: block;
+		order: 1;
+	}
+
+	h1{							
+		order:2;				/*ordering navbar flex items*/
+	}
+
+	.menus{
+		order:3;
+	}
+	
+}
+/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 760PX ENDS*/
+
+
+
+/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 535PX STARTS*/
+@media screen and (max-width: 535px){
+	
+  	.Footer{
+		flex-direction: column;	/*changing flex direction of last footer flex items*/
+	}
+
+}
+/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 535PX ENDS*/

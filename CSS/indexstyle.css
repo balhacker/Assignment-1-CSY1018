@@ -1,14 +1,23 @@
 /*CSS FOR MAIN GRID CONTAINER STARTS*/
 
 .Container{
-	margin:20px 60px 60px 60px;
+	margin:20px 60px 40px 60px;
 	display: grid;
 	grid-template-columns: 70% 28.5%;
-	grid-template-rows: 400px 275px;
 	grid-column-gap: 1.5%;
-	grid-row-gap: 2.5%;
 
+}
 
+/*customizing links in the main container*/
+.Container a{
+	text-decoration: none;
+	color: black;
+	font-family: 'Barlow', sans-serif;
+}
+
+/*customizing links in the main container on mouse hover*/
+.Container a:hover{
+	color:gray;
 }
 /*CSS FOR MAIN GRID CONTAINER ENDS*/
 
@@ -31,8 +40,9 @@
 	box-shadow: 0px 1px 11px 0px rgba(0,0,0,0.75);
 	border-radius: 20px;
 	background-size: cover;
-	background-position: center center;
-	color: transparent;
+	background-position: center;
+	height: 100%;
+	background-image: url(../Images/engadget-news-1.jpeg);
 }
 
 /*CSS FOR BREAKING NEWS BOX ENDS*/
@@ -42,42 +52,15 @@
 /*CSS FOR RECENT NEWS BOX STARTS*/
 
 .Recent{
-	overflow: hidden scroll;
 	grid-row: 1 / 3;
 	grid-column-start: 2;
 	box-shadow: 0px 1px 11px 0px rgba(0,0,0,0.75);
 }
 
-.image-1 img, .image-2 img, .image-3 img, .image-4 img, .image-5 img, .image-6 img{
-	width: 100px;
-	margin:15px 10px;
-}
+/*adjusting position of title on Recent News Section*/
+.Recent p{
+	margin:	0 9vw 0 9vw;
 
-h4{
-	margin: -80px 0 35px 125px;
-}
-
-.Container a{
-	color: black;
-	font-family: 'Barlow', sans-serif;
-}
-
-.Container a:hover{
-	color:gray;
-}
-
-hr{
-	display: none;
-}
-
-h5{
-	text-align: center;
-	color: blue;
-	font-family: 'Ubuntu Condensed', sans-serif;
-}
-
-h5:hover{
-	text-decoration: underline;
 }
 /*CSS FOR RECENT NEWS BOX ENDS*/
 
@@ -86,9 +69,15 @@ h5:hover{
 /*CSS FOR TRENDING NEWS BOX STARTS*/
 
 .Trending{
-	overflow: hidden scroll;
 	box-shadow: 0px 1px 11px 0px rgba(0,0,0,0.75);
+	margin-top: 25px;
 }
+
+/*adjusting position of title on Trending News Section*/
+.Trending p{
+	margin:	0 10vw 0 10vw;
+}
+
 /*CSS FOR TRENDING NEWS BOX ENDS*/
 
 
@@ -96,14 +85,23 @@ h5:hover{
 /*CSS FOR MOST POPULAR NEWS BOX STARTS*/
 
 .MostPopular{
-	overflow: hidden scroll;
 	box-shadow: 0px 1px 11px 0px rgba(0,0,0,0.75);
+	margin-top: 25px;
+}
+
+/*adjusting position of title on Most Popular News Section*/
+.MostPopular p{
+	margin:	0 10vw 0 10vw;
+
 }
 /*CSS FOR MOST POPULAR NEWS BOX ENDS*/
 
 
 
-.MostPopular p, .Trending p, .Breaking p, .Recent p{
+/*COMMON CSS FOR CONTENTS ON MAIN GRID CONTAINER STARTS*/
+
+/*customizing heading of each section in the main grid container*/
+.MostPopular p, .Trending p, .Recent p{
 	padding: 5px 0;
 	box-shadow: 0px 1px 11px 0px rgba(0,0,0,0.75);
 	font-family: 'Ubuntu Condensed', sans-serif;
@@ -115,88 +113,32 @@ h5:hover{
 	background:black;
 } 
 
-.MostPopular p{
-	margin:	0 10vw 0 10vw;
-
+/*adjusting image size and position in each section*/
+.image-1 img, .image-2 img, .image-3 img, .image-4 img, .image-5 img, .image-6 img{
+	width: 100px;
+	margin:15px 10px;
 }
 
-.Trending p{
-	margin:	0 10vw 0 10vw;
- }
-
-.Breaking p{
-	margin:	0 20vw 0 20vw;
-	background:red;
+/*customizing position of news content in each section*/
+h4{
+	margin: -80px 10px 35px 125px;
 }
 
-.Recent p{
-	margin:	0 9vw 0 9vw;
-
+/*hiding hr tag line*/
+hr{
+	display: none;
 }
 
-
-@media screen and (max-width:1025px ){
-
-	.Container{
-
-		grid-template-columns: 100%;
-		grid-template-rows: 400px 335px 335px ;
-		grid-row-gap: 2.5%;
-	}
-
- 	.image-4 , .image-5, .image-6 {
-		display: none;
-	}
-
-
-	.Recent{
-		
-		grid-row-start: 2;
-		grid-column-start: 1;
-	}
-
-	.MostPopular, .Trending, .Recent{
-		box-shadow: none;
-		border-bottom: 1px solid black;
-		overflow: hidden;
-		border-radius: 0 0 15px 15px;
-	}
-
-	.Breaking{
-		border:1px solid transparent;
-		overflow: hidden;
-	}
-
+/*customizing "show more" link in each section*/
+h5{
+	text-align: center;
+	color: blue;
+	font-family: 'Ubuntu Condensed', sans-serif;
 }
 
-@media screen and (max-width: 900px){
-
-	.InnerContainer{
-		grid-template-columns: 100%;
-		grid-row-gap: 7%;
-		grid-template-rows: 300px 300px;
-	}
-
-	.Container{
-		margin-left: 0;
-		margin-right: 0;
-	}
-
-
+/*customizing "show more" lonk on hover*/
+h5:hover{
+	text-decoration: underline;
 }
+/*COMMON CSS FOR CONTENTS ON MAIN GRID CONTAINER STARTS*/
 
-@media screen and (max-width: 570px){
-
-	.InnerContainer{
-		grid-template-rows: 300px 300px ;
-	}
-
-	.Container{
-		grid-template-rows: 300px 300px 300px;
-	}
-
-	.image-3{
-		display: none;
-	}
-
-}

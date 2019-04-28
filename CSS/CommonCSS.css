@@ -156,6 +156,19 @@ form{
 	border-color: white;
 	border-radius: 5px;
 }
+
+/*customizing close link in responsive pop-up search bar*/
+.popup-search a{
+	text-decoration: none;
+	color:white;
+	margin-left: 10px;
+	font-family: 'Kreon', serif;
+}
+
+/*sttyling close link in responsive pop-up search bar on hover*/
+.popup-search a:hover{
+	color:gray;
+}
 /*CSS FOR POPPING UP SEARCH BAR ENDS*/
 
 
@@ -320,7 +333,7 @@ h3{
 }
 
 /*customizing last footer items span and links*/
-.Last span, a{
+.Last span, .Last a{
 	color: gray;
 	text-decoration: none;
 }
@@ -336,65 +349,3 @@ h3{
 }
 
 /*CSS FOR FOOTER PART ENDS
-
-
-
-
-
-
-/*ADDING MEDIA QUERIES TO MAKE THE PAGE RESPONSIVE*/
-
-
-
-/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 1075PX STARTS*/
-@media screen and (max-width: 1075px){
-
-	.menus{						/*showing menu icon*/
-		display: block;
-	}
-
-	.navbar ul{					/*hiding navbar menus*/
-		display: none;
-	}
-
-}
-/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 1075PX ENDS*/
-
-
-
-
-/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 600PX STARTS*/
-@media screen and (max-width: 600px){
-
-	.navbar form{
-		display: none;			/*hiding search bar*/
-	}
-
-	.search-icon{				/*displaying search icon*/
-		display: block;
-		order: 1;
-	}
-
-	h1{							
-		order:2;				/*ordering navbar flex items*/
-	}
-
-	.menus{
-		order:3;
-	}
-	
-}
-/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 600PX ENDS*/
-
-
-
-/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 535PX STARTS*/
-@media screen and (max-width: 535px){
-	
-  	.Footer{
-		flex-direction: column;	/*changing flex direction of last footer flex items*/
-	}
-
-}
-/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 535PX ENDS*/
-
