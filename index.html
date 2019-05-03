@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html>
 <head>
 
 	<title>News Portal</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Kreon|Ubuntu+Condensed|Gabriela|Barlow" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kreon" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Gabriela" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
@@ -22,14 +25,14 @@
 <body>	
 
 	<!-- div for header containing site's name, search bar and navigation menus starts-->
-	<div class="navbar">
+	<nav>
 		<h1>Tech News</h1>
 		<form>
 			<input type="text" name="Bar" placeholder="Search The News...">
 			<input type="Submit" name="Button" value="Search">
 		</form>
 
-		<span class="search-icon"><i class="material-icons" onclick="PopUpSearch()">search</i>
+		<span class="search-icon"><i class="material-icons" onclick="popUpSearch()">search</i>
 		</span>
 
 		<ul>
@@ -40,10 +43,10 @@
 			<li><a href="HTML/tutorials.html">Tutorials</a></li>
 		</ul>
 
-		<span class="menus" id="menus" onclick="OpenSidebar()">
+		<span class="menus" id="menus" onclick="openSidebar()">
 			<i class="material-icons">menu</i>
 		</span>	
-	</div>
+	</nav>
 	<!-- div for header containing site's name, search bar and navigation menus ends-->
 
 
@@ -52,8 +55,8 @@
 	<div class="popup-search" id="popup-search">
 		<form>
 			<input type="text" name="Bar" placeholder="Search The News...">
-			<input type="Submit" name="Button" value="Search">
-			<a href="#" onclick="ClosePopUp()">Close</a>
+			<input type="Submit" name="Button" value="Search"><br>
+			<a href="#" onclick="closePopUp()">Close</a>
 		</form>
 	</div>
 	<!-- div for popup search bar and button in responsive view ends-->
@@ -62,7 +65,7 @@
 
 	<!-- div for sidebar in responsive view starts -->
 	<div class="sidebar" id="sidebar">
-		<span onclick="CloseSidebar()" class="close"><i class="material-icons">highlight_off</i></span>
+		<span onclick="closeSidebar()" class="close"><i class="material-icons">highlight_off</i></span>
 		<ul>
 			<li><a href="index.html">Home</a></li>	
 			<li><a href="HTML/reviews.html">Reviews</a></li>
@@ -79,83 +82,236 @@
 
 
 	<!-- div for contents of homepage starts-->
-	<div class="Container">
-		<div class="Breaking">
-		</div>
+	<main>
 
-		<div class="Recent"><p>Recent</p>
-			<span class="image-1"><a href="#"><img src="Images/NakedSecurity-News-1_opt.jpg"><h4>Google Assistant's bedtime stories come to iOS and Android</h4></a></span><hr>
-			<span class="image-2"><a href="#"><img src="Images/engadget-news-1_opt.jpg"><h4>Google Assistant's bedtime stories come to iOS and Android</h4></a></span><hr>
-			<span class="image-3"><a href="#"><img src="Images/engadget-news-1_opt.jpg"><h4>Google Assistant's bedtime stories come to iOS and Android</h4></a></span><hr>
-			<span class="image-4"><a href="#"><img src="Images/engadget-news-1_opt.jpg"><h4>Google Assistant's bedtime stories come to iOS and Android</h4></a></span><hr>
-			<span class="image-5"><a href="#"><img src="Images/engadget-news-1_opt.jpg"><h4>Google Assistant's bedtime stories come to iOS and Android</h4></a></span>
-			<span class="image-6"><a href="#"><img src="Images/engadget-news-1_opt.jpg"><h4>Google Assistant's bedtime stories come to iOS and Android</h4></a></span>
+		<!-- div for breaking news section -->
+		<div class="Breaking">
+			<div class="slides">
+				<a href="#"><img src="Images/breaking_news_1.jpg" alt=""></a>
+				<p>Microsoft Wants to Make Sure Text Typed Into Web Browsers in Incognito Mode Stays Private.</p>
+			</div>
+
+			<div class="slides">
+				<a href="#"><img src="Images/breaking_news_2.jpg" alt=""></a>
+				<p>Qualcomm Hangs on to Most Apple Gains After Earnings Report.</p>
+			</div>
+
+			<div class="slides">
+				<a href="#"><img src="Images/breaking_news_3.jpg" alt=""></a>
+				<p>Dell, Microsoft Expand Cloud Partnership With VMware Cloud Support on Azure.</p>
+			</div>
+
+			<div class="slides">
+				<a href="#"><img src="Images/breaking_news_4.jpg" alt=""></a>
+				<p>Study Claims US Youth Suicides Up After Netflix Show, Cause Unclear.</p>
+			</div>
+
+			<div class="slides">
+				<a href="#"><img src="Images/breaking_news_5.jpg" alt=""></a>
+				<p>Sri Lanka Lifts Social Media Ban, Imposed After Easter Sunday Bombings.</p>
+			</div>
+		</div> 
+
+		<!-- div for recent news section -->
+		<div class="Recent">
+
+			<p>Recent</p>
+
+			<div class="news-1"><a href="#"><img src="Images/recent_news_1.jpg" alt=""></a><h4><a href="#">Fiat Chrysler picks Google, Samsung for global connected car system</a></h4>	<!-- (Carey, 2019) -->
+			<h6>April 30,2019  |  10:00 PM</h6>
+			</div>
+
+
+			<div class="news-2"><a href="#"><img src="Images/recent_news_2.jpg" alt=""></a><h4><a href="#">Facebook joins research on social media impact on elections</a></h4>	<!-- (Carey, 2019) -->
+			<h6>April 30,2019  |  9:00 PM</h6>	
+			</div>
+
+			<div class="news-3"><a href="#"><img src="Images/recent_news_3.jpg" alt=""></a><h4><a href="#">New phishing exploit discovered in Google Chrome for Android</a></h4> <!-- (Fam, 2019) -->
+			<h6>April 30,2019  |  8:00 PM</h6>
+			</div>
+			
+
+
+			<div class="news-4"><a href="#"><img src="Images/recent_news_4.jpg" alt=""></a><h4><a href="#">Apple says it pulled parental control apps over privacy concerns </a></h4> <!-- (Gurman, 2019) -->
+			<h6>April 30,2019  |  7:00 PM</h6>
+			</div>
+			
+
+
+			<div class="news-5"><a href="#"><img src="Images/recent_news_5.jpg" alt=""></a><h4><a href="#">Google staffers share stories of ‘systemic’ retaliation </a></h4>
+			<h6>April 30,2019  |  6:00 PM</h6>
+			</div>
+			
+
+
+			<div class="news-6"><a href="#"><img src="Images/recent_news_6.jpg" alt=""></a><h4><a href="#">Zuckerberg to explain how Facebook gets 'privacy focused'</a></h4>
+			<h6>April 30,2019  |  5:00 PM</h6>
+			</div>
+
+
 			<a href="#"><h5>Show More</h5></a>
+
 		</div>
 
 		<div class="InnerContainer">
-			<div class="Trending"><p>Trending</p>
-				<span class="image-1"><a href="#"><img src="Images/engadget-news-1_opt.jpg"><h4>Google Assistant's bedtime stories come to iOS and Android</h4></a></span><hr>
-				<span class="image-2"><a href="#"><img src="Images/engadget-news-1_opt.jpg"><h4>Google Assistant's bedtime stories come to iOS and Android</h4></a></span><hr>
-				<span class="image-3"><a href="#"><img src="Images/engadget-news-1_opt.jpg"><h4>Google Assistant's bedtime stories come to iOS and Android</h4></a></span><hr>
+
+			<!-- div for trending news section -->
+			<div class="Trending">
+
+				<p>Trending</p>
+
+				<div class="news-1"><a href="#"><img src="Images/trending_news_1.jpg" alt=""></a><h4><a href="#">Instagram is testing hiding your likes </a></h4>
+				<h6>April 30,2019  |  2:00 PM</h6>
+				</div>
+				
+
+
+				<div class="news-2"><a href="#"><img src="Images/trending_news_2.jpg" alt=""></a><h4><a href="#">Google has created a maths AI that has already proved 1200 theorems</a></h4>
+				<h6>April 30,2019  |  1:30 PM</h6>
+				</div>
+				
+
+
+
+				<div class="news-3"><a href="#"><img src="Images/trending_news_3.jpg" alt=""></a><h4><a href="#">Virtual Reality as Therapy for Pain</a></h4>
+				<h6>April 29,2019  |  10:00 AM</h6>
+				</div>
+
+
+
 				<a href="#"><h5>Show More</h5></a>
 			</div>
 
-			<div class="MostPopular"><p>Most Popular </p>
-				<span class="image-1"><a href="#"><img src="Images/engadget-news-1_opt.jpg"><h4>Google Assistant's bedtime stories come to iOS and Android</h4></a></span><hr>
-				<span class="image-2"><a href="#"><img src="Images/engadget-news-1_opt.jpg"><h4>Google Assistant's bedtime stories come to iOS and Android</h4></a></span><hr>
-				<span class="image-3"><a href="#"><img src="Images/engadget-news-1_opt.jpg"><h4>Google Assistant's bedtime stories come to iOS and Android</h4></a></span><hr>
+			<!-- div for most popular news section -->
+			<div class="MostPopular">
+
+				<p>Most Popular </p>
+
+				<div class="news-1"><a href="#"><img src="Images/popular_news_1.jpg" alt=""></a><h4><a href="#">How to Charge Your Gadgets as Fast as Possible</a></h4>
+				<h6>April 26,2019  |  3:00 PM</h6>
+				</div>
+
+
+
+				<div class="news-2"><a href="#"><img src="Images/popular_news_2.jpg" alt=""></a><h4><a href="#">7 Must-Have Gadgets For Men Who Love Tech</a></h4>
+				<h6>April 23,2019  |  7:00 AM</h6>
+				</div>
+
+
+
+				<div class="news-3"><a href="#"><img src="Images/popular_news_3.jpg" alt=""></a><h4><a href="#">Android TV's ascent: 5,000 apps and counting</a></h4>
+				<h6>April 23,2019  |  6:15 AM</h6>
+				</div>
+
+
+
 				<a href="#"><h5>Show More</h5></a>
+
 			</div>
 		</div>
-	</div>
+	</main>
 	<!-- div for contents of homepage ends-->
+
+	<hr>
+
+	<!-- div for about us section starts -->
+	<div class="About">
+		<h2>About Us</h2>
+
+		<p>Tech News is a Technology News Site.</p>
+		<p id="reveal">We cover everything and anything on technology news, views, reviews, launches, trends and much more.You can read about all that happens just anywhere in the world of technology.</p>	<!--(Gadget Now, n.d.)-->
+
+		<a href="*" id="showmore" onclick= "revealAboutUs()">Show More</a>
+		<a href="*" id="showless" onclick= "hideAboutUs()">Show Less</a>
+
+		<hr>
+
+	</div>
+	<!-- div for about us section ends -->
+
+
+
+	<!-- div for our team section starts -->
+	<div class="Team">
+		<h2>Our Team</h2>
+		<div class="OurTeam">
+			<div>
+				<a href="#"><img src="Images/icon-1.png" alt="Person Icon Image"></a> <!-- (Clipart.Email, n.d.) -->
+				<h4>Subin Gyawali</h4>
+				<h5>Manager</h5>
+			</div>
+
+
+			<div>
+				<a href="#"><img src="Images/icon-2.jpg" alt="Person Icon Image"></a> <!-- (Chittagongit.com, n.d.) -->
+				<h4>Subin Gyawali</h4>
+				<h5>Chief Editor</h5>
+			</div>
+
+
+			<div>
+				<a href="#"><img src="Images/icon-3.svg" alt="Person Icon Image"></a> <!-- (Clipart.Email, n.d.) -->
+				<h4>Subin Gyawali</h4>
+				<h5>Editor</h5>
+			</div>
+
+
+			<div>
+				<a href="#"><img src="Images/icon-4.png" alt="Person Icon Image"></a> <!-- (Team, n.d.) -->
+				<h4>Subin Gyawali</h4>
+				<h5>Developer</h5>
+			</div>
+		</div>
+		<a href="#" class="showall">Show All</a>
+	</div>
+	<!-- div for our team section ends -->
+
 
 
 	<!-- div for footer items starts -->
-	<div class="Footer">
-		<span class="Links">
+	<footer>
+		<div class="Links">
+			<h3>Menu</h3>
 			<ul>
-				<h3>Menu</h3>
 				<li><a href="index.html">Home</a></li>	
 				<li><a href="HTML/reviews.html">Reviews</a></li>
 				<li><a href="HTML/glossary.html">Glossary</a></li>
 				<li><a href="HTML/jobs.html">Jobs</a></li> 
 				<li><a href="HTML/tutorials.html">Tutorials</a></li>
 			</ul>
-		</span>
+		</div>
 
-		<!-- span for social media links -->
-		<span class="Social">
+		<!-- div for social media links -->
+		<div class="Social">
+			<h3>Follow Us</h3>
 			<ul>
-				<h3>Follow Us</h3>
 				<li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i>Facebook</a></li>
 				<li><a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i>Twitter</a></li>
 				<li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
 				<li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i>YouTube</a></li>
 				<li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
 			</ul>
-		</span>
+		</div>
 
-		<!-- span for contact section -->
-		<span class="Contact">
+		<!-- div for contact section -->
+		<div class="Contact">
+			<h3>Contact Us</h3>
 			<ul>
-				<h3>Contact Us</h3>
 				<li><a href="tel:+9779812345678"><i class="material-icons">call</i>+977-9812345678</a></li>
-				<li><a href="mailto:thenews@gmail.com"><i class="material-icons">mail</i>technews@gmail.com</a></li>
+				<li><a href="mailto:technews@gmail.com"><i class="material-icons">mail</i>technews@gmail.com</a></li>
 				<li><a href="https://goo.gl/maps/NtGkNMqjzsvhQkz19" target="_blank"><i class="material-icons">location_on</i>Kathmandu , Nepal</a></li>
 			</ul>	
-		</span>
+		</div>
 
-		<!-- span for newsleletter subscription section-->
-		<span class="Subscribe">	
+		<!-- div for newsleletter subscription section-->
+		<div class="Subscribe">	
 			<h3>Subscribe</h3>
 			<form>
-				<input type="email" name="Email" required="*" placeholder="Enter Your E-mail">
+				<input type="email" name="Email" required="" placeholder="Enter Your E-mail">
 				<input type="submit" name="Button" value="Subscribe">
 			</form>
-		</span>
-	</div>
+		</div>
+	</footer>
 
 	<!-- div for copyright, terms and policy sections -->
 	<div class="Last">
@@ -171,6 +327,9 @@
 	</div>
 	<!-- div for footer items ends -->
 
+	<script>
+		slideshow();	//calling slideshow function from javascript.js to run slideshow
+	</script>
 
 </body>
 </html>
