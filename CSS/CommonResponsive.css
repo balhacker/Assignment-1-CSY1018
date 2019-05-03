@@ -10,7 +10,7 @@
 		display: block;
 	}
 
-	.navbar ul{					/*hiding navbar menus*/
+	nav ul{						/*hiding navbar menus*/
 		display: none;
 	}
 
@@ -23,7 +23,7 @@
 /*MEDIA QUERY FOR SCREEN SIZE LESS THAN 760PX STARTS*/
 @media screen and (max-width: 760px){
 
-	.navbar form{
+	nav form{
 		display: none;			/*hiding search bar*/
 	}
 
@@ -33,9 +33,9 @@
 	}
 
 	h1{							
-		order:2;				/*ordering navbar flex items*/
-	}
-
+		order:2;				
+	}	
+								/*ordering navbar flex items*/
 	.menus{
 		order:3;
 	}
@@ -48,8 +48,12 @@
 /*MEDIA QUERY FOR SCREEN SIZE LESS THAN 535PX STARTS*/
 @media screen and (max-width: 535px){
 	
-  	.Footer{
+  	footer{
 		flex-direction: column;	/*changing flex direction of last footer flex items*/
+	}
+
+	footer input[name=Email]{	/*defining margin for email bar in subscribe menu*/
+		margin-left: 35px;
 	}
 
 }

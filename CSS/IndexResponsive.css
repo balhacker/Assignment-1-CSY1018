@@ -6,12 +6,12 @@
 /*MEDIA QUERY FOR SCREEN SIZE LESS THAN 1000PX STARTS*/
 @media screen and (max-width:1000px ){
 
-	.Container{
+	main{
 
 		grid-template-columns: 100%;			/*efining width of main grid container*/
 	}
 
- 	.image-4 , .image-5, .image-6 {				/*hiding 4th ,5th and 6th section of news contents*/
+ 	.news-4 , .news-5{				/*hiding 4th ,5th and 6th section of news contents*/
 		display: none;
 	}
 
@@ -46,10 +46,27 @@
 		grid-template-columns: 100%;
 	}
 
-	.Container{									/*removing margings on main grid container*/
+	main{									/*removing margings on main grid container*/
 		margin-left: 0;
 		margin-right: 0;
 	}
 
+	.OurTeam{									/*reducing number of columns in "our team" grid container*/
+		grid-template-columns: auto auto;
+	}
 }
 /*MEDIA QUERY FOR SCREEN SIZE LESS THAN 760PX ENDS*/
+
+
+
+
+@media screen and (max-width: 535px){
+
+	.OurTeam{									/*reducing number of columns in "our team" grid container*/
+		grid-template-columns: auto;
+	}
+	
+	.slides p{									/*adjusting the font size of breaking news content*/
+		font-size: 13px;
+	}
+}

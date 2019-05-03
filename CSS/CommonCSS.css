@@ -1,7 +1,7 @@
 /*CSS FOR NAVIGATION BAR STARTS*/
 
 /*styling and positioning header and navigation bar*/
-.navbar{
+nav{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -11,12 +11,10 @@
 	background-color: white;
 	padding: 0 10px;
 	border-bottom:4px solid;
-	position: sticky;
-	top:0;
 }
 
 /*customizing navigation bar links*/
-.navbar a{
+nav a{
 	margin:0 10px;
 	text-decoration: none;
 	font-family: 'Kreon', serif;
@@ -26,13 +24,13 @@
 }
 
 /*sttyling menu items on hover*/
-.navbar a:hover{
+nav a:hover{
 	font-size: 1.7em;
 	font-weight: bold;
 }
 
 /*adjusting position of menu items*/
-.navbar ul{							
+nav ul{							
 	margin-top: 30px;
 	display: flex;
 	flex-direction: row;
@@ -48,7 +46,7 @@ li{
 
 
 /*CSS FOR SITE'S NAME STARTS*/
-h1{
+nav h1{
 	margin-left: 10px;
 	font-size: 30px;
 	font-family: 'Fredericka the Great', cursive;
@@ -66,7 +64,7 @@ form{
 }
 
 /*customizing search bar*/
-.navbar input[name=Bar]{
+nav input[name=Bar]{
 	padding:5px 15vw 5px 5px;
 	border-color: black;
 	border-radius: 5px;
@@ -75,7 +73,7 @@ form{
 }
 
 /*customizing search button*/
-.navbar input[name=Button]{
+nav input[name=Button]{
 	padding: 6px 10px;
 	background-color: black;
 	color: white;
@@ -87,7 +85,7 @@ form{
 }
 
 /*creating effects in search button on hover*/
-.navbar input[name=Button]:hover{
+nav input[name=Button]:hover{
 
 	background-color: white;
 	border:1px solid black;
@@ -155,13 +153,13 @@ form{
 	padding:5px 15vw 5px 5px;
 	border-color: white;
 	border-radius: 5px;
+	margin-bottom: 15px;
 }
 
 /*customizing close link in responsive pop-up search bar*/
 .popup-search a{
 	text-decoration: none;
 	color:white;
-	margin-left: 10px;
 	font-family: 'Kreon', serif;
 }
 
@@ -249,7 +247,7 @@ form{
 /*CSS FOR FOOTER PART STARTS*/
 
 /*customizing whole footer div*/
-.Footer{
+footer{
 	padding:50px 0;
 	width:100%;
 	background-color: #191919;
@@ -261,24 +259,30 @@ form{
 }
 
 /*defining margins for all spans on footer*/
-.Footer span{
+footer span{
 	margin:0 10px;
 }
 
 /*customixing icons on footer part*/
-.Footer i{
+footer i{
 	font-size: 15px;
 	margin:0 10px 0 0;
 }
 
+/*customizing google icons on footer part*/
+footer .material-icons{
+	font-size: 15px;
+}
+
 /*customizing footer titles*/
-h3{
+footer h3{
 	color: white;
 	font-family: 'Gabriela', serif;
+	margin-left:40px;
 }
 
 /*customizing footer links*/
-.Footer a{
+footer a{
 	text-decoration: none;
 	color: gray;
 	font-family: 'Ubuntu Condensed', sans-serif;
@@ -286,17 +290,17 @@ h3{
 }
 
 /*defining margins for footer list items*/
-.Footer li{
+footer li{
 	margin: 5px 0;
 }
 
 /*changing color of footer links on hover*/
-.Footer a:hover{
+footer a:hover{
 	color: white;
 }
 
 /*customizing subscribe butoon*/
-.Footer input[name=Button]{
+footer input[name=Button]{
 	padding: 6px 10px;
 	background-color: red;
 	color: white;
@@ -308,13 +312,13 @@ h3{
 }
 
 /*customizing subscribe butoon on hover*/
-.Footer input[name=Button]:hover{
+footer input[name=Button]:hover{
 	background-color: white;
 	color:black;	
 }
 
 /*csutomizing input space for email*/
-.Footer input[name=Email]{
+footer input[name=Email]{
 	padding:5px 10vw 5px 5px;
 	border-color: white;
 	border-radius: 5px;

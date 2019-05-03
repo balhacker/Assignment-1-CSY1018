@@ -1,22 +1,23 @@
 /*CSS FOR MAIN GRID CONTAINER STARTS*/
 
-.Container{
-	margin:20px 60px 40px 60px;
+main{
+	margin:20px 60px 20px 60px;
 	display: grid;
-	grid-template-columns: 70% 28.5%;
+	grid-template-columns: 68.5% 30%;
 	grid-column-gap: 1.5%;
 
 }
 
-/*customizing links in the main container*/
-.Container a{
+/*customizing links/news in the main container*/
+main a{
 	text-decoration: none;
 	color: black;
 	font-family: 'Barlow', sans-serif;
+	font-weight: normal;
 }
 
 /*customizing links in the main container on mouse hover*/
-.Container a:hover{
+main a:hover{
 	color:gray;
 }
 /*CSS FOR MAIN GRID CONTAINER ENDS*/
@@ -39,12 +40,49 @@
 .Breaking{
 	box-shadow: 0px 1px 11px 0px rgba(0,0,0,0.75);
 	border-radius: 20px;
-	background-size: cover;
-	background-position: center;
-	height: 100%;
-	background-image: url(../Images/engadget-news-1.jpeg);
+	position: relative;
 }
 
+/*customizing images on breaking news section*/
+.Breaking img{
+	width:100%; /*831px;*/
+	border-radius: 20px;
+}
+
+/*customizing news content on breaking news section*/
+.Breaking p{
+	position: absolute;
+	background:black;
+	top:5%;
+	opacity: 0.8;
+	color: white;
+	font-size: 2.5vw;
+	width: 80%;
+	padding: 2% 18% 2% 2%;
+	font-family: 'Kreon', serif;
+
+}
+
+.Breaking p:hover{
+	color: red;
+}
+
+/*creating animations for slideshow*/
+.slides{
+	animation-name: slides;
+	animation-duration: 2s;
+}
+
+/*creating effects for slideshow*/
+@keyframes slides{
+	0%{
+		opacity: 0.5;
+	}
+
+	100%{
+		opacity: 1;
+	}
+}
 /*CSS FOR BREAKING NEWS BOX ENDS*/
 
 
@@ -114,31 +152,141 @@
 } 
 
 /*adjusting image size and position in each section*/
-.image-1 img, .image-2 img, .image-3 img, .image-4 img, .image-5 img, .image-6 img{
+.news-1 img, .news-2 img, .news-3 img, .news-4 img, .news-5 img, .news-6 img, .news-7 img{
 	width: 100px;
 	margin:15px 10px;
 }
 
 /*customizing position of news content in each section*/
-h4{
-	margin: -80px 10px 35px 125px;
+main h4{
+	margin: -100px 10px 35px 125px;
+}
+
+main h6{
+	margin: -35px 10px 35px 125px;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	color:gray;
+	font-weight: lighter;
 }
 
 /*hiding hr tag line*/
-hr{
-	display: none;
+main hr{
 }
 
 /*customizing "show more" link in each section*/
-h5{
+main h5{
 	text-align: center;
 	color: blue;
+	font-weight: lighter;
 	font-family: 'Ubuntu Condensed', sans-serif;
 }
 
-/*customizing "show more" lonk on hover*/
-h5:hover{
+/*customizing "show more" link on hover*/
+main h5:hover{
 	text-decoration: underline;
 }
 /*COMMON CSS FOR CONTENTS ON MAIN GRID CONTAINER STARTS*/
 
+
+
+
+/*CSS FOR ABOUT US SECTION STARTS*/
+
+/*customizing position and text align in about us section*/
+.About{
+	margin:2% 25% 2% 25%;
+	text-align: center;
+}
+
+/*customizing "About Us" title*/
+.About h2{
+	text-decoration: underline;
+	font-family: 'Gabriela', serif;
+	font-weight: bold;
+}
+
+/*customizing the contents of about us section*/
+.About p{
+	font-family: 'Barlow', sans-serif;
+	font-size: 15px;
+}
+
+/*customizing "Show More" and "Show Less" button*/
+.About > #showmore, #showless{
+	color: blue;
+	text-decoration: none;
+	font-family: 'Barlow', sans-serif;
+	font-size: 15px;
+}
+
+/*hiding "Show Less" button*/
+.About #showless{
+	display: none;	
+}
+
+/*hiding the cotent previously which will be displayed using javascript when show more is pressed*/
+.About #reveal{
+	display: none;
+}
+/*CSS FOR ABOUT US SECTION ENDS*/
+
+
+
+
+/*CSS FOR OUR TEAM SECTION STARTS*/
+
+/*customizing position and text align in "Our Team " section*/
+.Team{
+	margin:0 10% 2% 10%;
+	text-align: center;
+}
+
+/*customizing "Our Team" title*/
+.Team h2{
+	text-decoration: underline;
+	font-family: 'Gabriela', serif;
+	font-weight: bold;
+}
+
+/*customizing images in our team section*/
+.Team img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border:2px solid black;
+}
+
+/*keeping shadow on images in our team on hover*/
+.Team img:hover{
+	box-shadow: 0px 1px 11px 0px rgba(0,0,0,0.75);
+}
+
+/*styling links in our team section*/
+.Team .showall{
+	font-family: 'Barlow', sans-serif;
+	font-size: 15px;
+	text-decoration: none;
+	color: blue;
+}
+
+/*customizing staffs' information section*/
+.OurTeam{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	justify-content: space-evenly;
+	margin-top: 3%;
+	flex-wrap: wrap;
+	font-family: 'Barlow', sans-serif;
+}
+
+/*adjusting postion of the " Staff's post" text*/
+.OurTeam h4{
+	margin-top:-0.5px;
+}
+
+/*customizing "Staff's name" text*/
+.OurTeam h5{
+	margin-top: -10px;
+	font-weight: lighter;
+}
+/*CSS FOR OUR TEAM SECTION ENDS*/
