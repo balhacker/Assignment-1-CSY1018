@@ -1,7 +1,13 @@
 
 /*ADDING MEDIA QUERIES TO MAKE THE PAGE RESPONSIVE*/
 
+@media screen and (max-width: 1250px){
 
+ 	.news-4 , .news-5{				/*hiding 4th ,5th and 6th section of news contents*/
+		display: none;
+	}
+
+}
 
 /*MEDIA QUERY FOR SCREEN SIZE LESS THAN 1000PX STARTS*/
 @media screen and (max-width:1000px ){
@@ -10,11 +16,6 @@
 
 		grid-template-columns: 100%;			/*efining width of main grid container*/
 	}
-
- 	.news-4 , .news-5{				/*hiding 4th ,5th and 6th section of news contents*/
-		display: none;
-	}
-
 
 	.Recent{									/*adjusting position of recent newssection*/
 		

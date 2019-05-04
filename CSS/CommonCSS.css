@@ -14,7 +14,7 @@ nav{
 }
 
 /*customizing navigation bar links*/
-nav a{
+nav ul a{
 	margin:0 10px;
 	text-decoration: none;
 	font-family: 'Kreon', serif;
@@ -24,7 +24,7 @@ nav a{
 }
 
 /*sttyling menu items on hover*/
-nav a:hover{
+nav ul a:hover{
 	font-size: 1.7em;
 	font-weight: bold;
 }
@@ -46,10 +46,13 @@ li{
 
 
 /*CSS FOR SITE'S NAME STARTS*/
-nav h1{
+nav a{
 	margin-left: 10px;
-	font-size: 30px;
-	font-family: 'Fredericka the Great', cursive;
+	font-size: 35px;
+	font-family: 'Cabin Sketch', cursive;
+	text-decoration: none;
+	color: black;
+	margin: 20px 0 20px 10px;
 }
 /*CSS FOR SITE'S NAME ENDS*/
 
@@ -118,7 +121,7 @@ nav input[name=Button]:hover{
 /*customizing popup search bar background and position*/
 .popup-search{
 	position: fixed;
-	top:1;
+	top:0;
 	left:0;
 	right:0;
 	width:100%;
@@ -256,10 +259,11 @@ footer{
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 	border-radius: 10px 10px 0 0;
+	margin-top: 20px;
 }
 
 /*defining margins for all spans on footer*/
-footer span{
+footer div{
 	margin:0 10px;
 }
 
@@ -337,7 +341,7 @@ footer input[name=Email]{
 }
 
 /*customizing last footer items span and links*/
-.Last span, .Last a{
+.Last div, .Last a{
 	color: gray;
 	text-decoration: none;
 }
@@ -352,4 +356,4 @@ footer input[name=Email]{
 	color: white;
 }
 
-/*CSS FOR FOOTER PART ENDS
+/*CSS FOR FOOTER PART ENDS*/

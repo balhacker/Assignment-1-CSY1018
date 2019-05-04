@@ -1,0 +1,123 @@
+/*CSS FOR HEADING STARTS*/
+.heading{
+	text-align: center;
+	margin-top: 30px;
+	font-size: 2vw;
+	font-family: 'Signika', sans-serif;
+	text-decoration: underline;
+	text-decoration-style:double;
+}
+/*CSS FOR HEADING ENDS*/
+
+
+/*CSS FOR MAIN GRID CONTAINER STARTS*/
+
+/*customizing main grid container*/
+main{
+	display: grid;
+	grid-template-columns:32% 32% 32%;
+	grid-column-gap:2%;
+	margin: 35px 10px 10px 10px;
+}
+
+/*customizing content cards*/
+section{
+	box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.61);
+	margin-bottom: 6%;
+	border-radius: 10px;
+}
+
+/*positioning title and contents*/
+section > h3,p{
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+/*customizing the contents*/
+section p{
+	text-align: justify;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*customizing titles of the articles*/
+section h3{
+	font-family: 'Signika', sans-serif;
+	color: purple;
+	text-align: center;
+}
+
+/*customizing "more" link*/
+.link a{
+	font-family: 'Kreon', serif;
+	font-weight: lighter;
+	font-size: 15px;
+	text-decoration: none;
+	color: green;
+}
+
+/*customizing "more" link on hover*/
+.link a:hover{
+	font-weight: bold;
+}
+
+/*positioning "more" link*/
+.link{
+	text-align: center;
+	margin: 20px 0;
+}
+/*CSS FOR MAIN GRID CONTAINER ENDS*/
+
+
+/*CSS FOR SHOW MORE LINK STARTS*/
+
+/*customizing show more link*/
+.showmore a{
+	text-decoration: none;
+	font-size: 20px;
+	font-family: 'Signika', sans-serif;
+	color: gray;
+}
+
+/*customizing showmore link on hover*/
+.showmore a:hover{
+	color: red;
+	text-decoration: underline;
+}
+
+/*positioning showmore link*/
+.showmore{						
+	text-align: center;
+	margin-bottom: 5px;
+}
+/*CSS FOR SHOW MORE LINK ENDS*/
+
+
+
+
+
+/*ADDING MEDIA QUERIES TO MAKE THE PAGE RESPONSIVE*/
+
+
+/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 1000px STARTS*/
+@media screen and (max-width: 1000px){
+
+	main{								/*reducing no of colums in main grid container*/
+		grid-template-columns: 49% 49%;
+	}
+}
+/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 1000px ENDS*/
+
+
+
+/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 760px STARTS*/
+@media screen and (max-width: 760px){
+
+	main{								/*reducing no of colums in main grid container*/
+		grid-template-columns: 100%;
+	}
+
+	.heading{							/*adjusting font-size of heading*/
+		font-size: 15px;
+	}
+}
+/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 760px ENDS*/

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<link rel="shortcut icon" href="../Images/glossary_icon.png"><!-- (Material Design, n.d.) -->
+
+	<title>Glossary</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://fonts.googleapis.com/css?family=Kreon" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Gabriela" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet"> 
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+	<script src="../Javascript/javascript.js"></script> 
+
+	<link rel="stylesheet" type="text/css" href="../CSS/glossarystyle.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/CommonCSS.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/CommonResponsive.css">
+
+</head>
+<body>	
+
+	<!-- div for header containing site's name, search bar and navigation menus starts-->
+	<nav>
+		<a href="../index.html">Tech News</a>
+		<form>
+			<input type="text" name="Bar" placeholder="Search The News...">
+			<input type="Submit" name="Button" value="Search">
+		</form>
+
+		<span class="search-icon"><i class="material-icons" onclick="popUpSearch()">search</i>
+		</span>
+
+		<ul>
+			<li><a href="../index.html">Home</a></li>	
+			<li><a href="reviews.html">Reviews</a></li>
+			<li><a href="jobs.html">Jobs</a></li> 
+			<li><a href="tutorials.html">Tutorials</a></li>
+		</ul>
+
+		<span class="menus" id="menus" onclick="openSidebar()">
+			<i class="material-icons">menu</i>
+		</span>	
+	</nav>
+	<!-- div for header containing site's name, search bar and navigation menus ends-->
+
+
+
+	<!-- div for popup search bar and button in responsive view starts-->
+	<div class="popup-search" id="popup-search">
+		<form>
+			<input type="text" name="Bar" placeholder="Search The News...">
+			<input type="Submit" name="Button" value="Search"><br>
+			<a href="#" onclick="closePopUp()">Close</a>
+		</form>
+	</div>
+	<!-- div for popup search bar and button in responsive view ends-->
+
+
+
+	<!-- div for sidebar in responsive view starts -->
+	<div class="sidebar" id="sidebar">
+		<span onclick="closeSidebar()" class="close"><i class="material-icons">highlight_off</i></span>
+		<ul>
+			<li><a href="../index.html">Home</a></li>	
+			<li><a href="reviews.html">Reviews</a></li>
+			<li><a href="jobs.html">Jobs</a></li> 
+			<li><a href="tutorials.html">Tutorials</a></li>
+		</ul>
+	</div>
+	<!-- div for sidebar in responsive view ends -->
+
+
+	<hr>	<!-- hr tags -->
+	<hr>
+
+	<!-- MAIN CONTENT OF THE PAGE STARTS -->
+	
+	<div class="heading">
+		<h2>Web Development At a Glance</h2>
+	</div>
+
+	<main>
+
+		<section>
+			<h3>Browser</h3>
+			<p>A web browser is the software used to access the internet and display web pages. When you type a web address or URL into the browser, you are effectively sending out a series of requests. The browser will gather all the different elements that make up that particular webpage, such as images, ads and content, from wherever they are stored in order to display the page that you see. The most common browsers include Edge, Chrome, Firefox, Safari etc.</p><!-- (Stevens, 2018) -->
+						
+			<div class="link">
+				<a href="https://careerfoundry.com/en/blog/web-development/50-web-development-buzzwords-that-all-new-programmers-should-learn/" target="_blank">More</a>
+			</div>
+			
+		</section>
+
+		<section>
+			<h3>HTML</h3>
+			<p>HTML stands for Hypertext Markup Language. Simply put, it’s a computer language used to create websites. HTML describes how a document  should be displayed by an internet browser as a webpage. It consists of tags, elements and attributes and, once you’ve got the hang of it, is pretty simple to work with! Hypertext is basically text that contains links to other texts.The Markup part refers to HTML tags and the text inside them</p><!-- (Stevens, 2018) -->
+						
+			<div class="link">
+				<a href="https://careerfoundry.com/en/blog/web-development/50-web-development-buzzwords-that-all-new-programmers-should-learn/" target="_blank">More</a>
+			</div>
+			
+		</section>
+
+		<section>
+			<h3>CSS</h3>
+			<p>CSS stands for Cascading Style Sheets. It is a markup language responsible for the visual elements of a website. HTML (another markup language) is used to determine the structure and content of the webpage. Web developers will then use CSS to style this content; in other words, CSS tells the browser how the HTML elements should be displayed. CSS is used to apply colours and to determine font, text size and alignment, to name just a few.</p><!-- (Stevens, 2018) -->
+						
+			<div class="link">
+				<a href="https://careerfoundry.com/en/blog/web-development/50-web-development-buzzwords-that-all-new-programmers-should-learn/" target="_blank">More</a>
+			</div>
+			
+		</section>
+
+		<section>
+			<h3>JavaScript</h3>
+			<p>JavaScript is primarily used as a client-side language, meaning that it is embedded into the HTML of a page and sent to the browser. Web developers use JavaScript to add automation, animations and interactivity to web pages.<!-- (Stevens, 2018) -->JavaScript is a lightweight, interpreted programming language. It is designed for creating network-centric applications.JavaScript is very easy to implement since it is integrated with HTML.<!-- (www.tutorialspoint.com, n.d.) --></p>
+						
+			<div class="link">
+				<a href="https://careerfoundry.com/en/blog/web-development/50-web-development-buzzwords-that-all-new-programmers-should-learn/" target="_blank">More</a>
+			</div>
+			
+		</section>
+
+		<section>
+			<h3>Git</h3>
+			<p>An absolute staple in the web development world, Git is a version control system where developers can store and manage their code. As a web developer, you’ll make constant changes to your code whenever you’re in the process of creating something, be it an app or a website. Git enables you to track these changes and reverse them if necessary, and also to work together with other teams and manage multiple projects at once.</p><!-- (Stevens, 2018) -->
+						
+			<div class="link">
+				<a href="https://careerfoundry.com/en/blog/web-development/50-web-development-buzzwords-that-all-new-programmers-should-learn/" target="_blank">More</a>
+			</div>
+			
+		</section>
+
+		<section>
+			<h3>GitHub</h3>
+			<p>GitHub is a cloud interface for Git. It has been around since 2008 and now has over 28 million users worldwide, making it the largest host of source code in the world! GitHub offers all the version control functionality of Git, but also offers its own features, such as bug tracking, task management and project wikis.It is a very important tool for developers.Users can create as many repositories as they want and can make repositories  public or private.</p><!-- (Stevens, 2018) -->
+						
+			<div class="link">
+				<a href="https://careerfoundry.com/en/blog/web-development/50-web-development-buzzwords-that-all-new-programmers-should-learn/" target="_blank">More</a>
+			</div>
+			
+		</section>
+
+		<section>
+			<h3>Web App</h3>
+			<p>It’s important to distinguish between mobile apps and web apps, as they are built differently. Native mobile apps are built for a specific platform, such as iOS for iPhone, and are installed and run on the device itself. Web apps, on the other hand, are accessed via the internet browser and will adapt to whichever device you’re viewing them. They’re not native to a specific system, nor do they need to be downloaded or installed.</p><!-- (Stevens, 2018) -->
+							
+			<div class="link">
+				<a href="https://careerfoundry.com/en/blog/web-development/50-web-development-buzzwords-that-all-new-programmers-should-learn/" target="_blank">More</a>
+			</div>
+
+		</section>
+
+		<section>
+			<h3>Bootstrap</h3>
+			<p>Bootstrap is a free, open-source frontend framework for designing websites and web apps. It was developed by Mark Otto and Jacob Thornton at Twitter in order to encourage consistency across internal tools. Bootstrap includes HTML and CSS-based design templates for typography, forms, buttons, tables, navigation, modals and more, plus JavaScript plugins. Developers use botstrap to develop more complex and attractive websites.</p><!-- (Stevens, 2018) -->
+						
+			<div class="link">
+				<a href="https://careerfoundry.com/en/blog/web-development/50-web-development-buzzwords-that-all-new-programmers-should-learn/" target="_blank">More</a>
+			</div>
+			
+		</section>
+
+		<section>
+			<h3>Full Stack</h3>
+			<p>Full-stack developers work across all three layers: the frontend, the backend and the database layer.Backend refers to everything that goes on behind the scenes. What happens at the backend or server-side and Frontend refers to visual output of a website or client-side of the website. Because of the sheer depth of their knowledge across the entire spectrum, full-stack developers tend to have years of industry experience behind them.</p><!-- (Stevens, 2018) -->
+						
+			<div class="link">
+				<a href="https://careerfoundry.com/en/blog/web-development/50-web-development-buzzwords-that-all-new-programmers-should-learn/" target="_blank">More</a>
+			</div>
+			
+		</section>
+
+	</main>
+
+	<div class="showmore">
+		<a href="https://careerfoundry.com/en/blog/web-development/50-web-development-buzzwords-that-all-new-programmers-should-learn/" target="_blank">More Terms</a>
+	</div>
+
+	<!-- MAIN CONTENT OF THE PAGE ENDS -->
+
+	<!-- div for footer items starts -->
+	<footer>
+		<div class="Links">
+			<h3>Menu</h3>
+			<ul>
+				<li><a href="../index.html">Home</a></li>	
+				<li><a href="reviews.html">Reviews</a></li>
+				<li><a href="jobs.html">Jobs</a></li> 
+				<li><a href="tutorials.html">Tutorials</a></li>
+			</ul>
+		</div>
+
+		<!-- div for social media links -->
+		<div class="Social">
+			<h3>Follow Us</h3>
+			<ul>
+				<li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i>Facebook</a></li>
+				<li><a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i>Twitter</a></li>
+				<li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+				<li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i>YouTube</a></li>
+				<li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
+			</ul>
+		</div>
+
+		<!-- div for contact section -->
+		<div class="Contact">
+			<h3>Contact Us</h3>
+			<ul>
+				<li><a href="tel:+9779812345678"><i class="material-icons">call</i>+977-9812345678</a></li>
+				<li><a href="mailto:technews@gmail.com"><i class="material-icons">mail</i>technews@gmail.com</a></li>
+				<li><a href="https://goo.gl/maps/NtGkNMqjzsvhQkz19" target="_blank"><i class="material-icons">location_on</i>Kathmandu , Nepal</a></li>
+			</ul>	
+		</div>
+
+		<!-- div for newsleletter subscription section-->
+		<div class="Subscribe">	
+			<h3>Subscribe</h3>
+			<form>
+				<input type="email" name="Email" required="" placeholder="Enter Your E-mail">
+				<input type="submit" name="Button" value="Subscribe">
+			</form>
+		</div>
+	</footer>
+
+	<!-- div for copyright, terms and policy sections -->
+	<div class="Last">
+		<div>
+			<p><i class="fa fa-copyright"></i> 2019, Tech News Ltd. All Rights Reserved.</p>
+		</div>
+
+		<div class="Terms">
+			<a href="#">Terms of Use</a>
+			|
+			<a href="#">Privacy Policy</a>
+		</div>
+	</div>
+	<!-- div for footer items ends -->
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+/*CSS FOR HEADING STARTS*/
+.heading{
+	text-align: center;
+	margin-top: 30px;
+	font-size: 2vw;
+	font-family: 'Signika', sans-serif;
+	text-decoration: underline;
+	text-decoration-style:double;
+}
+/*CSS FOR HEADING ENDS*/
+
+
+/*CSS FOR COMPARISON WINDOW STARTS*/
+.compare label{			
+	margin-right: 5px;
+	font-weight: bold;
+}
+
+.compare{
+	font-family: 'Roboto Condensed', sans-serif;
+	box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.61);
+	margin-top: 25px;
+	padding:10px;
+	margin:3% 20% 0 20%;
+}
+
+.compare h2{
+	text-align: center;
+}
+/*CSS FOR COMPARISON WINDOW ENDS*/
+
+
+/*CSS FOR HTML STARTS*/
+
+/*customizing filedset*/
+fieldset input{
+	margin-bottom: 15px;
+	font-family: 'Roboto Condensed', sans-serif;
+	border-style: none;
+	border:2px solid;
+	padding:5px 15px;
+	border-radius: 5px;
+}
+
+/*customizing option selector*/
+select{
+	padding:5px 15px;
+	border:2px solid;
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
+
+/*customizing text area*/
+fieldset textarea{
+	margin-bottom: 15px;
+	margin-top: 15px;
+	width: 70%;
+	font-family: 'Roboto Condensed', sans-serif;
+	padding-bottom: 100px;
+	border:2px solid;
+}
+
+/*customizing labels*/
+fieldset label{
+	margin-right: 5px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*customizing legend of HTML form*/
+legend{
+	font-family: 'Roboto Condensed', sans-serif;
+	margin-left: 10%;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/*customizing fieldset as a whole*/
+fieldset{
+	margin-top: 30px;
+}
+/*CSS FOR HTML FORM ENDS*/
+
+
+
+/*customizing terms and condition link*/
+.terms a{
+	color: black;
+}
+
+.terms a:hover{
+	color: blue;
+}
+
+.terms{
+	margin: 10px 0;
+}
+
+
+/*/CSS FOR MAIN GRID CONTAINER STARTS*/
+section{
+	box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.61);
+	padding:20px;
+}
+
+/*styling job title*/
+section h3{
+	font-family: 'Signika', sans-serif;
+}
+
+/*styling contents of main*/
+section p{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*customizing the container as a whole*/
+main{
+	display: grid;
+	grid-template-columns: 35% 35%;
+	justify-content:space-evenly;
+}
+/*CSS FOR MAIN GRID CONTAINER ENDS*/
+
+
+
+
+/*ADDING MEDIA QUERIES TO MAKE THE PAGE RESPONSIVE*/
+
+
+/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 1000px STARTS*/
+@media screen and (max-width: 1000px){
+
+	main{								/*reducing no of colums in main grid container*/
+		grid-template-columns: 70%;
+	}
+
+	section{							/*adjusting margin for section*/
+		margin-top: 25px;
+	}
+}
+/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 1000px ENDS*/
+
+
+/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 535px STARTS*/
+@media screen and (max-width: 535px){
+
+	.heading{
+		font-size: 20px;				/*adjusting font-size of page heading*/
+	}
+
+	main{
+		grid-template-columns: 100%;	/*increasing width of grid elements*/
+	}
+
+	.compare{							/*adjusting margin for camparison box*/
+		margin:25px 0 0 0;
+	}
+}
+/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 535px ENDS*/

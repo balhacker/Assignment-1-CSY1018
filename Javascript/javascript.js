@@ -31,6 +31,7 @@ function hideAboutUs(){			//function to hide part of About us section when click
 	document.getElementById("showless").style.display = "none";
 }
 
+
 //function to show breaking news slideshow
 
 var index = 0;
