@@ -3,7 +3,7 @@
 
 @media screen and (max-width: 1250px){
 
- 	.news-4 , .news-5{				/*hiding 4th ,5th and 6th section of news contents*/
+ 	.news-4 , .news-5{							/*hiding 4th ,5th and 6th section of news contents*/
 		display: none;
 	}
 
@@ -47,7 +47,7 @@
 		grid-template-columns: 100%;
 	}
 
-	main{									/*removing margings on main grid container*/
+	main{										/*removing margings on main grid container*/
 		margin-left: 0;
 		margin-right: 0;
 	}

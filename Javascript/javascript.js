@@ -19,20 +19,20 @@ function closePopUp(){			//function to define closing of popping up search bar i
 	document.getElementById("popup-search").style.display = "none";
 }
 
-function revealAboutUs(){		//function to show part of About us section when clicked
+function revealAboutUs(){		//function to show part of About us section when clicked in Landing Page
 	document.getElementById("reveal").style.display = "block";
 	document.getElementById("showmore").style.display = "none";
 	document.getElementById("showless").style.display = "block";
 }
 
-function hideAboutUs(){			//function to hide part of About us section when clicked
+function hideAboutUs(){			//function to hide part of About us section when clicked in Landing Page
 	document.getElementById("reveal").style.display = "none";
 	document.getElementById("showmore").style.display = "block";
 	document.getElementById("showless").style.display = "none";
 }
 
 
-//function to show breaking news slideshow
+//function to show breaking news slideshow in Landing Page
 
 var index = 0;
 
@@ -49,5 +49,5 @@ function slideshow() {
 
   news[index-1].style.display = "block";  
 
-  setTimeout(slideshow, 4500); 						//changes slide in every 4.5s
+  setTimeout(slideshow, 4000); 							//changes slide in every 4s
 }
