@@ -53,7 +53,7 @@
 	}
 
 	footer input[name=Email]{	/*defining margin for email bar in subscribe menu*/
-		margin-left: 30px;
+		margin-left: 5px;
 	}
 
 }
