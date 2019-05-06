@@ -11,6 +11,9 @@ nav{
 	background-color: white;
 	padding: 0 10px;
 	border-bottom:4px solid;
+	position: sticky;
+	top:0;
+	z-index: 2;
 }
 
 /*customizing navigation bar links*/
@@ -49,7 +52,7 @@ li{
 nav a{
 	margin-left: 10px;
 	font-size: 35px;
-	font-family: 'Cabin Sketch', cursive;
+	font-family: 'Gugi', cursive;
 	text-decoration: none;
 	color: black;
 	margin: 20px 0 20px 10px;
@@ -121,16 +124,16 @@ nav input[name=Button]:hover{
 /*customizing popup search bar background and position*/
 .popup-search{
 	position: fixed;
-	top:0;
+	top:1;
 	left:0;
 	right:0;
 	width:100%;
 	background: black;
-	opacity: 0.9;
 	text-align: center;
 	color: white;
 	display: none;
-	border-radius: 10px;
+	border-radius: 50px;
+	z-index: 3;
 }
 
 /*customizing responsive popup search button*/
@@ -156,7 +159,7 @@ nav input[name=Button]:hover{
 	padding:5px 15vw 5px 5px;
 	border-color: white;
 	border-radius: 5px;
-	margin-bottom: 15px;
+	margin-bottom: 7px;
 }
 
 /*customizing close link in responsive pop-up search bar*/
@@ -206,6 +209,7 @@ nav input[name=Button]:hover{
 	padding:0;
 	opacity: 0.8;
 	transition: 1s;
+	z-index: 3;
 }
 
 /*removing bullets on link lists and adjusting margins*/
