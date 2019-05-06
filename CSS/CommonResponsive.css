@@ -52,9 +52,5 @@
 		flex-direction: column;	/*changing flex direction of last footer flex items*/
 	}
 
-	footer input[name=Email]{	/*defining margin for email bar in subscribe menu*/
-		margin-left: 5px;
-	}
-
 }
 /*MEDIA QUERY FOR SCREEN SIZE LESS THAN 535PX ENDS*/
