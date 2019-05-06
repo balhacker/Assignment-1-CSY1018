@@ -103,7 +103,7 @@ fieldset{
 /*/CSS FOR MAIN GRID CONTAINER STARTS*/
 section{
 	box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.61);
-	padding:20px;
+	padding:15px;
 }
 
 /*styling job title*/
@@ -111,6 +111,16 @@ section h3{
 	font-family: 'Signika', sans-serif;
 	color: purple;
 	font-size: 25px;
+}
+
+/*styling show more link*/
+section h5{
+	font-family: 'Roboto Condensed', sans-serif;
+	color: blue;
+	font-size: 15px;
+	text-align: center;
+	font-weight: lighter;
+	cursor: pointer;
 }
 
 /*styling contents of main*/

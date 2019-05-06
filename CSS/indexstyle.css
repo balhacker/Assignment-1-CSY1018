@@ -227,6 +227,8 @@ main h5:hover{
 	text-decoration: none;
 	font-family: 'Barlow', sans-serif;
 	font-size: 15px;
+	cursor: pointer;
+	font-weight: lighter;
 }
 
 /*hiding "Show Less" button*/
