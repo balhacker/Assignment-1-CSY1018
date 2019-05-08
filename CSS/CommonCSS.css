@@ -303,6 +303,7 @@ footer a{
 	color: gray;
 	font-family: 'Ubuntu Condensed', sans-serif;
 	font-size: 18px;
+	transition: 0.5s;
 }
 
 /*defining margins for footer list items*/
