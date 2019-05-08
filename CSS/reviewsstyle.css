@@ -101,3 +101,23 @@ section h3{
 	}
 }
 /*MEDIA QUERY FOR SCREEN SIZE LESS THAN 760px ENDS*/
+
+
+
+
+/* MEDIA QUERY FOR SCREEN SIZE LESS THAN 350px STARTS*/
+@media screen and (max-width:350px){
+
+/* customizing codepen and fontawesome logo*/
+	.codepen img, .fontawesome img{
+	width: 85vw;
+	height: 85vw;
+	}
+
+/*customizing w3schools logo*/
+	.w3schools img{
+	width: 95vw;
+	height: 85vw;
+	}
+}
+/* MEDIA QUERY FOR SCREEN SIZE LESS THAN 350px ENDS*/

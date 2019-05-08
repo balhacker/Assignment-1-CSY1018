@@ -111,7 +111,7 @@ iframe{
 /*MEDIA QUERY FOR SCREEN SIZE LESS THAN 535px STARTS*/
 @media screen and (max-width: 535px){
 
-	iframe{								/*reducing no of colums in main grid container*/
+	section iframe{								/*reducing no of colums in main grid container*/
 		height: 240px;
 	}
 }
