@@ -22,9 +22,15 @@ main{
 
 /*customizing content cards*/
 section{
-	box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.61);
+	box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.35);
 	margin-bottom: 6%;
 	border-radius: 10px;
+	transition: 1s;
+}
+
+/*styling content cards on hover*/
+section:hover{
+	box-shadow: 0px 2px 25px 0px rgba(100,100,200,0.55);
 }
 
 /*positioning title and contents*/
