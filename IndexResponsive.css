@@ -1,6 +1,9 @@
 
 /*ADDING MEDIA QUERIES TO MAKE THE PAGE RESPONSIVE*/
 
+
+
+/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 1250PX STARTS*/
 @media screen and (max-width: 1250px){
 
  	.news-4 , .news-5{							/*hiding 4th and 5th section of news contents*/
@@ -8,6 +11,11 @@
 	}
 
 }
+/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 1250PX ENDS*/
+
+
+
+
 
 /*MEDIA QUERY FOR SCREEN SIZE LESS THAN 1000PX STARTS*/
 @media screen and (max-width:1000px ){
@@ -32,6 +40,7 @@
 
 }
 /*MEDIA QUERY FOR SCREEN SIZE LESS THAN 1000PX ENDS*/
+
 
 
 
@@ -61,6 +70,8 @@
 
 
 
+
+/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 535PX STARTS*/
 @media screen and (max-width: 535px){
 
 	.OurTeam{									/*reducing number of columns in "our team" grid container*/
@@ -68,3 +79,4 @@
 	}
 	
 }
+/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 535PX ENDS*/

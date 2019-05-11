@@ -1,12 +1,11 @@
 /*CSS FOR HEADING STARTS*/
 .heading{
 	text-align: center;
-	font-size: 3vw;
+	font-size: 2vw;
 	font-family: 'Signika', sans-serif;
-	text-decoration: underline;
-	text-decoration-style:double;
 }
 /*CSS FOR HEADING ENDS*/
+
 
 
 /*CSS FOR MAIN GRID CONTAINER STARTS*/
@@ -26,6 +25,18 @@ section{
 	box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.61);
 }
 
+/*customizing codepen logo and fontawesome logo*/
+.codepen img, .fontawesome img{
+	width: 300px;
+	height: 300px;
+}
+
+/*customizing w3schools logo*/
+.w3schools img{
+	width: 350px;
+	height: 300px;
+}
+
 /*customizing details of the tutorials*/
 section p{
 	text-align: justify;
@@ -43,12 +54,6 @@ section h3{
 	margin-right: 15px;
 	font-size: 25px;
 }
-
-/*removing border from Youtube videos iframe*/
-iframe{
-	border:none;	
-}
-
 /*CSS FOR MAIN GRID CONTAINER ENDS*/
 
 
@@ -79,40 +84,46 @@ iframe{
 
 
 
-/*ADDING MEDIA QUERIES TO MAKE THE PAGE RESPONSIVE*/
-
-
-/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 1000px STARTS*/
-@media screen and (max-width: 1000px){
-
-	section{								/*reducing no of colums in main grid container*/
-		grid-template-columns: auto;
-	}
-}
-/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 1000px ENDS*/
 
 
 
 /*MEDIA QUERY FOR SCREEN SIZE LESS THAN 760px STARTS*/
 @media screen and (max-width: 760px){
 
-	iframe{								/*reducing no of colums in main grid container*/
-		width:100%;
-	}
-
 	.heading{							/*adjusting font-size of heading*/
-		font-size: 25px;
+		font-size: 15px;
+	}
+	
+	section{							/*reducing number of colums in section*/
+		grid-template-columns: auto;
+	}
+	
+	section img{
+		order: 1;
+	}
+										/*ordering cotents in section in responsive view*/
+	section div{
+		order: 2;
 	}
 }
 /*MEDIA QUERY FOR SCREEN SIZE LESS THAN 760px ENDS*/
 
 
 
-/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 535px STARTS*/
-@media screen and (max-width: 535px){
 
-	section iframe{								/*reducing no of colums in main grid container*/
-		height: 240px;
+/* MEDIA QUERY FOR SCREEN SIZE LESS THAN 350px STARTS*/
+@media screen and (max-width:350px){
+
+/* customizing codepen and fontawesome logo*/
+	.codepen img, .fontawesome img{
+	width: 85vw;
+	height: 85vw;
+	}
+
+/*customizing w3schools logo*/
+	.w3schools img{
+	width: 95vw;
+	height: 85vw;
 	}
 }
-/*MEDIA QUERY FOR SCREEN SIZE LESS THAN 535px ENDS*/
+/* MEDIA QUERY FOR SCREEN SIZE LESS THAN 350px ENDS*/

@@ -34,20 +34,20 @@ function hideAboutUs(){			//function to hide part of About us section when click
 
 //function to show breaking news slideshow in Landing Page
 
-var index = 0;
+var slideNumber = 0;
 
 function slideshow() {
-  var a;
+  var s;
   var news = document.getElementsByClassName("slides");
 
-  for (a = 0; a < news.length; a++) {					//Taken from:(W3schools.com, n.d.)
-    news[a].style.display = "none";  
-  }
+  for (s = 0; s < news.length; s++) {					//Taken from:(W3schools.com, n.d.)
+    news[s].style.display = "none";  
+  }														//https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto
 
-  index++;
-  if (index > news.length) {index = 1}  
+  slideNumber++;
+  if (slideNumber > news.length) {slideNumber = 1}  
 
-  news[index-1].style.display = "block";  
+  news[slideNumber-1].style.display = "block";  
 
   setTimeout(slideshow, 4000); 							//changes slide in every 4s
 }

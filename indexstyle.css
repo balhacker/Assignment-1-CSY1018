@@ -36,6 +36,7 @@ main a:active{
 	display: grid;
 	grid-template-columns: 49% 49%;
 	grid-column-gap: 2%;
+	margin-top:20px;
 }
 /*CSS FOR INNER GRID CONTAINER ENDS*/
 
@@ -45,7 +46,7 @@ main a:active{
 
 .Breaking{
 	box-shadow: 0px 1px 11px 0px rgba(0,0,0,0.75);
-	border-radius: 20px;
+	border-radius: 10px;
 	position: relative;
 	z-index: 1;
 }
@@ -53,7 +54,7 @@ main a:active{
 /*customizing images on breaking news section*/
 .Breaking img{
 	width:100%;
-	border-radius: 20px;
+	border-radius: 10px;
 }
 
 /*customizing news content on breaking news section*/
@@ -68,9 +69,9 @@ main a:active{
 	padding: 2% 2% 2% 2%;
 	font-family: 'Noto Sans JP', sans-serif;
 	transition: 0.5s;
-
 }
 
+/*styling breaking news headline on hover*/
 .Breaking p:hover{
 	color: red;
 }
@@ -107,7 +108,6 @@ main a:active{
 /*adjusting position of title on Recent News Section*/
 .Recent p{
 	margin:	0 9vw 0 9vw;
-
 }
 /*CSS FOR RECENT NEWS BOX ENDS*/
 
@@ -117,7 +117,6 @@ main a:active{
 
 .Trending{
 	box-shadow: 0px 1px 11px 0px rgba(0,0,0,0.75);
-	margin-top: 25px;
 	border-radius: 8px;
 }
 
@@ -134,7 +133,6 @@ main a:active{
 
 .MostPopular{
 	box-shadow: 0px 1px 11px 0px rgba(0,0,0,0.75);
-	margin-top: 25px;
 	border-radius: 8px;
 }
 
@@ -157,7 +155,7 @@ main a:active{
 	text-align: center;
 	font-size: 18px;
 	background-color: black;
-	border-radius: 0 0 15px 15px;
+	border-radius: 0 0 10px 10px;
 	color: white;
 	background:black;
 } 
